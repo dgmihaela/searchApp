@@ -1,0 +1,110 @@
+
+// @font-face {
+//     font-family: 'Open Sans', sans-serif;
+//     src: url('../../font/OpenSans-Bold.ttf');
+// }
+// @font-face {
+//     font-family: 'Open Sans', sans-serif;
+//     src: url('../../font/OpenSans-ExtraBold.ttf');
+//     font-weight: bold;
+// }
+
+
+// @font-face {
+//     font-family: 'Open Sans', sans-serif;
+//     src: url('../../font/OpenSans-Light.ttf');
+//     font-weight: 300;
+// }
+// @font-face {
+//     font-family: 'Open Sans', sans-serif;
+//     src: url('../../font/SourceSansPro-LightItalic.ttf');
+//     font-style: italic;
+//     font-weight: 300;
+// }
+
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+footer,header,section{
+	display:block;
+}
+
+
+html{
+	font-family:sans-serif;
+  -ms-text-size-adjust:100%;
+	-webkit-text-size-adjust:100%;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden; 
+}
+
+
+body{
+ 
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.47;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0; 
+
+  // @media #{$information-phone} {
+  //     width: 100%;
+  //   }
+}
+
+// svg:not(:root) {
+//   overflow: hidden;
+//   text-align: center;
+// }
+
+
+p {
+  margin: 0;
+  @include text(rem(18), 1.8, $text-dark-color, normal, 0, none, 300, normal);
+  font-family: 'Open Sans', sans-serif;
+}
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+li{
+  display: inline-block;
+}
+a{
+  text-decoration: none !important;
+  cursor: pointer;
+}
+input{
+  
+  border: none;
+}
+section{
+  text-align: center;
+  width: 100%;
+}
+
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.container-fluid{
+  padding: 0;
+}

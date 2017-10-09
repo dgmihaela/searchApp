@@ -1,0 +1,235 @@
+
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PoolPros</title>
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/application.css" rel="stylesheet">
+    <script src="data/dealers.js" type="text/javascript"></script>
+  </head>
+
+  <body>
+
+    <header id="header" class="container-fluid">
+    <div class="row">
+      <div class="upHeader col-sm-12">
+        <div class="col-sm-3 up-header">
+          <a href="#" class="dealers">Dealers and Distributors</a>
+          <a href="#" class="comm">Commercial Use<span class="fa fa-share-square-o"></span></a>
+        </div>
+      </div>
+      <div class="col-sm-12 subMenu clearfix">
+        <div class="logo"><img src="img/pool-pros-logo.png"></div>
+        <a href="#menu" id="toggle"><img src="img/menu-icon-mobile.png"></a>
+        <div class="accordionWrapper clearfix" id="menu">
+          <div class="dropdown accordionItem closed">
+            <a class="dropdown-toggle accordionItemHeading" data-toggle="dropdown" href="#">Pools&Spas<span class="fa fa-chevron-down"></span></a>
+            <ul class="dropdown-menu ">
+              <li><a href="#">Pools</a></li>
+                <li><a href="#">Spas</a></li>
+            </ul>
+          </div>
+          <div class="dropdown accordionItem closed">
+            <a class="dropdown-toggle accordionItemHeading" data-toggle="dropdown" href="#">Supplies<span class="fa fa-chevron-down"></span></a>
+            <ul class="dropdown-menu ">
+              <li><a href="#">Supplies#1</a></li>
+                <li><a href="#">Supplies#2</a></li>
+            </ul>
+          </div>
+          <div class="dropdown accordionItem closed">
+            <a class="dropdown-toggle accordionItemHeading" data-toggle="dropdown" href="#">Resources<span class="fa fa-chevron-down"></span></a>
+            <ul class="dropdown-menu ">
+              <li><a href="#">Resources#1</a></li>
+                <li><a href="#">Resources#1</a></li>
+            </ul>
+          </div>
+          <div class="dropdown accordionItem closed">
+            <a class="dropdown-toggle accordionItemHeading" data-toggle="dropdown" href="#">Services<span class="fa fa-chevron-down"></span></a>
+            <ul class="dropdown-menu ">
+              <li><a href="#">Services#1</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="mapBtn">
+          <a href="#" class="header-btn-desk"><span class="fa fa-map-marker"></span>Find a pool pro</a>
+          <a href="#" class="header-btn-mobile"><span class="fa fa-map-marker"></span>Find a pro</a>
+        </div>
+      </div>
+      </div>
+    </header>
+
+    <section class="container-fluid">
+      <div id="hero" class="row">
+        <div class="hero-img col-md-12">
+          <h1 class="h1">Is your pool ready for Summer?</h1>
+          <h2 class="h3">A pool pro is ready to help</h2>
+          <form method="post" action="#" class="input">
+            <input class="zipCode" type="text" name="zipCode" id="zipCode">
+          </form>
+          <p>Choose a pro that's close to your home from the list below</p>
+        </div>
+        <div class="hero-spec col-md-12 clearfix">
+          <div class="spec clearfix">
+            <div class="spec-img ">
+              <img src="img/1-circle.png">
+            </div>
+            <div class="spec-text ">
+              <h3 class="h4">choose a pro</h3>
+              <p>Make sure you Zio code is correct, then choose a pro from the list below</p>
+            </div>
+          </div>
+          <div class="spec clearfix">
+            <div class="spec-img ">
+              <img src="img/2-circle.png">
+            </div>
+            <div class="spec-text ">
+              <h3 class="h4">contact a pro</h3>
+              <p>Email a pro to make an appointment for pool & spa installation</p>
+            </div>
+          </div>
+          <div class="spec clearfix">
+            <div class="spec-img ">
+              <img src="img/3-circle.png">
+            </div>
+            <div class="spec-text ">
+              <h3 class="h4">a pro visit</h3>
+              <p>A pro will visit your home and acces your poll & spa needs</p>
+            </div>
+          </div>
+        </div>
+        <div class="hero-img-btm col-md-12"></div>
+      </div> 
+    </section>
+    
+    <section class="container-fluid">
+      <div class="row">
+        <div class="sidebar col-md-11 check row">
+         <div class="check-container col-md-9 clearfix">
+            <div class="results-count ">
+              <p><span id="total_items">0</span>Dealers</p>
+            </div>
+            <div class="filter-title">
+              <p>Filter results</p>
+                <a href="#results" id="toggled"><span class="fa fa-caret-down""></span></a>
+                <fieldset id="cert-criteria" class="cert-criteria">
+                  
+                  <div class="checkboxa">
+                      <input type="checkbox" value="Service Pro" id="checkbox1">
+                      <label for="checkbox1"><span>Service</span></label>
+                  </div>
+                  <div class="checkboxa">
+                      <input type="checkbox" value="Installation Pro" id="checkbox2">
+                      <label for="checkbox2"><span>Installation</span></label>
+                  </div>
+                  <div class="checkboxa">
+                      <input type="checkbox" value="Residential Pro" id="checkbox3">
+                      <label for="checkbox3"><span>Residential</span> </label>
+                  </div>
+                  <div class="checkboxa">
+                      <input type="checkbox" value="Commercial Pro" id="checkbox4">
+                      <label for="checkbox4"><span>Commercial</span></label>
+                  </div>
+                </fieldset>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid">
+      <div class="row">
+        <div class="col-md-11 items">
+          <div class="content row" id="dealers"> </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid" style="padding: 0;">
+      <div class="row">
+        <div class="first-footer col-md-12">
+          <img src="img/pool-pros-logo-footer.png">
+          <ul class="list">
+          <li class="list-title">Connect with us</li>
+          <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+          <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+          <li><a href="#"><span class="fa fa-youtube"></span></a></li>  
+          </ul>
+        </div>
+        <div class="row middle-footer">
+          <div class="col-sm-12">
+            <a href="#" class="dealers">Dealers and Distributors</a>
+            <a href="#" class="comm">Commercial Use<span class="fa fa-share-square-o"></span></a>
+          </div>
+        </div>
+        <div class="sec-footer col-md-12">
+          <ul class="td-list">
+            <li><span class="fa fa-copyright"></span>2017 Pool Pros</li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms and conditions</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+
+    <script src="js/app.min.js" type="text/javascript"></script>
+
+    <script id="dealers-template" type="text/html">
+      <div class="col-md-4 dealer-item">
+        <div class="dealer-content">
+          <div class="caption">
+            <div class="dealer-title"><h4 class="h2"> <%= name %></h4></div>
+            <div  class="phone clearfix">
+              <img src="img/phone-icon-desktop.png" class="desk-phone">
+              <p><%= phone1 %></p>
+            </div>
+            <div  class="mobile-phone clearfix">
+              <img src="img/phone-icon-mobile.png">
+              <p><span class="tap">Tap to call </span><%= phone1 %></p>
+            </div>
+            <div class="direction"> 
+              <p>Can't talk now? Click below to send an email</p>
+            </div>
+            <div class="email-btn">
+              <a href="mailto:<%= email %>" target="_blank" ><img src="img/email-icon.png" class="email-icon"> Contact this pro</a>
+            </div>
+            <div class="hours-title">
+              <p>Bussiness Hours</p>
+            </div>
+            <div class="program">
+             <ul>
+               <li class="weekdays">Weekdays <%=weekHours.mon%></li>
+               <li class="saturdays">Saturdays <%=weekHours.sat%></li>
+               <li class="sundays">Sundays <%=weekHours.sun%></li>
+             </ul>
+            </div>
+          </div>
+          <div class="cert-list">
+            <div class="cert-list_content clearfix">
+              <ul class="cert-list_item">
+                <li id="test">
+                  <img id="icon-cert" src="img/star-installation-pro.png"><p><%= certifications[0] %></p> 
+                </li>
+                <li id="test">
+                  <img id="icon-cert" src="img/users-commercial-pro.png"><p><%= certifications[1] %></p> 
+                </li>
+                <li id="test">
+                  <img id="icon-cert" src="img/home-residential-pro.png"><p><%= certifications[2] %></p> 
+                </li>
+                <li id="test">
+                  <img id="icon-cert" src="img/gear-service-pro.png"><p><%= certifications[3] %></p> 
+                </li> 
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </script>
+  </body>
+</html>

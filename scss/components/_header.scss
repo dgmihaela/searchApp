@@ -1,0 +1,127 @@
+
+
+.logo{
+	float:left;
+	width: 17%;
+	
+	img{
+		width: 100%;
+	}
+
+	@media #{$information-phone} {
+    width: 40%;
+    }
+}
+
+.subMenu{
+	margin-top: 2rem;
+	padding: 0 3rem;
+
+	@media #{$information-phone} {
+    	position:relative;
+        display:inline-block;
+        width: 100%;
+        padding: 0 1.5rem;
+    }
+    @media #{$information-tablet} {
+    	position:relative;
+        display:inline-block;
+        width: 100%;
+        padding: 0 2rem;
+    }
+}
+
+.upHeader{
+	background-color: $first-color;
+
+	@media #{$information-phone} {
+    	display: none;
+    }
+	@media #{$information-tablet} {
+    	display: none;
+    }
+}
+
+.up-header{
+	float:right;
+}
+.dealers, .comm{
+	color: $text-light-color;
+	margin-right: 1rem;
+	font-size: 1rem;
+	line-height: 2.6;
+
+	&:hover{
+		color: $third-color;
+	}
+}
+
+.fa-share-square-o{
+	margin-left: 0.5rem;
+}
+
+
+
+.mapBtn{
+	float:right;
+	border: 2px solid $second-color;
+	border-radius: 5px;
+	background-color: $text-light-color;
+
+	@media #{$information-phone} {
+    	position: absolute;
+		left: 44%;
+		top: -3%;
+    }
+    @media #{$information-tablet} {
+    	left: 46%;
+    }
+}
+
+.header-btn-desk{
+	font-size: 1rem;
+	color: $second-color;
+	padding:1.5rem 1rem;
+	line-height: 3;
+	font-weight: bold;
+
+	@media #{$information-phone} {
+    	display: none;
+    }
+}
+
+.header-btn-mobile{
+	display: none;
+
+	@media #{$information-phone} {
+    	display: block;
+		font-size: 0.7rem;
+		color: $second-color;
+		padding: 0 0.7rem;
+		line-height: 3;
+		font-weight: bold;
+		text-transform: uppercase;
+    }
+
+    @media #{$information-tablet} {
+    	font-size: 1rem;
+    }
+}
+.fa-map-marker{
+	margin-right: 0.5rem;
+
+	@media #{$information-phone} {
+    	font-size: 1.4rem;
+    }
+}
+
+#hero{
+	@media #{$information-phone} {
+    	margin-top: 1rem;
+    }
+		
+	}
+
+
+
+

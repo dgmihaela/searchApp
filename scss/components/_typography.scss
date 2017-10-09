@@ -1,0 +1,45 @@
+.h1{
+    @include text(rem(55), 1.5, $text-light-color, normal, 0, normal, 300, rem(3));
+     font-family:'Open Sans', sans-serif !important;
+
+    @media #{$information-phone} {
+        @include text(rem(30), 1.5, $text-light-color, normal, 0, normal, 300, rem(1));
+    }
+    @media #{$information-tablet} {
+        @include text(rem(30), 1.5, $text-light-color, normal, 0, normal, 300, rem(1));
+    }
+}
+
+.h2{
+     @include text(rem(27), 1, $text-dark-color, normal, 0, normal, 300, rem(1));
+     font-family:'Open Sans', sans-serif !important;
+     margin: 0 0 2rem 0;
+}
+
+
+.h3{
+     @include text(rem(20), 1.5, $third-color, normal, 0, uppercase, bold, rem(1));
+     font-family:'Open Sans', sans-serif !important;
+
+    @media #{$information-phone} {
+        @include text(rem(15), 1.5, $third-color, normal, 0, uppercase, bold, rem(1));
+    }
+    @media #{$information-tablet} {
+        @include text(rem(15), 1.5, $third-color, normal, 0, uppercase, bold, rem(1));
+    }
+}
+
+.h4{
+    @include text(rem(20), 1.5, $first-color, normal, 0, uppercase, bold, rem(1));
+    font-family:'Open Sans', sans-serif !important;
+
+     @media #{$information-phone} {
+        @include text(rem(20), 1.5, $first-color, normal, 0, uppercase, bold, rem(0.2));
+        margin-bottom: 0.4rem;
+    }
+    @media #{$information-tablet} {
+        @include text(rem(20), 1.5, $first-color, normal, 0, uppercase, bold, rem(0.2));
+        margin-bottom: 0.4rem;
+    }
+}
+
